@@ -7,15 +7,15 @@ public class CriaConta {
 	public static void main(String[] args) {
 		
 		Conta primeiraConta = new Conta();
-		primeiraConta.saldo = 200.00;
-		System.out.println("Saldo da primeira conta é de R$" + primeiraConta.saldo);
+		primeiraConta.deposita(200.00);
+		System.out.println("Saldo da primeira conta é de R$" + primeiraConta.getSaldo());
 		
 		Conta segundaConta = new Conta();
-		segundaConta.saldo += 200.00;		
-		System.out.println("Saldo da segunda conta é de R$" + segundaConta.saldo + "\n");
+		segundaConta.deposita(200.00);
+		System.out.println("Saldo da segunda conta é de R$" + segundaConta.getSaldo() + "\n");
 		
-		primeiraConta.agencia = 146;
-		segundaConta.agencia = primeiraConta.agencia;
+		primeiraConta.setAgencia(146);
+		segundaConta.setAgencia(primeiraConta.getAgencia());
 
 		if (primeiraConta == segundaConta)
 			System.out.println("Mesma conta!");

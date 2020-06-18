@@ -7,16 +7,16 @@ public class TesteReferencias {
 	public static void main(String[] args) {
 		
 		Conta primeiraConta = new Conta();
-		primeiraConta.saldo = 300.00;
-		System.out.println("Saldo da primeira conta é de R$" + primeiraConta.saldo);
+		primeiraConta.deposita(300.00);
+		System.out.println("Saldo da primeira conta é de R$" + primeiraConta.getSaldo());
 		
 		Conta segundaConta = primeiraConta;
-		System.out.println("Saldo da segunda conta é de R$" + segundaConta.saldo);
+		System.out.println("Saldo da segunda conta é de R$" + segundaConta.getSaldo());
 		System.out.println();
 		
-		segundaConta.saldo += 100.00;
-		System.out.println("Saldo da primeira conta é de R$" + primeiraConta.saldo);
-		System.out.println("Saldo da segunda conta é de R$" + segundaConta.saldo);
+		segundaConta.deposita(100.00);
+		System.out.println("Saldo da primeira conta é de R$" + primeiraConta.getSaldo());
+		System.out.println("Saldo da segunda conta é de R$" + segundaConta.getSaldo());
 		System.out.println();
 		
 		if (primeiraConta == segundaConta)
