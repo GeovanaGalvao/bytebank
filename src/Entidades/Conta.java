@@ -7,6 +7,14 @@ public class Conta {
 	private int numero;
 	private Cliente titular;
 	
+	public Conta() {}
+	
+	public Conta(int agencia, int numero) {
+		this.agencia = agencia;
+		this.numero = numero;
+		System.out.println("Uma conta está sendo criada com o numero: " + numero + " e agencia: " + agencia);
+	}
+	
 	public void deposita(double valor) {
 		saldo += valor;
 	}
@@ -31,6 +39,14 @@ public class Conta {
 		return false;
 	}
 	
+	public boolean testaAgenciaENumero(int numero) {
+		if (numero <= 0) {
+			System.out.println("Nao pode ser inserido um numero menor ou igual a zero.");
+			return false;
+		}
+		return true;
+	}
+	
 	public double getSaldo() {
 		return saldo;
 	}
@@ -40,7 +56,8 @@ public class Conta {
 	}
 
 	public void setAgencia(int agencia) {
-		this.agencia = agencia;
+		if (testaAgenciaENumero(agencia))
+			this.agencia = agencia;
 	}
 
 	public int getNumero() {
@@ -48,7 +65,8 @@ public class Conta {
 	}
 
 	public void setNumero(int numero) {
-		this.numero = numero;
+		if (testaAgenciaENumero(numero))
+			this.numero = numero;
 	}
 
 	public Cliente getTitular() {
