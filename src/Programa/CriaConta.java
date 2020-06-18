@@ -14,8 +14,8 @@ public class CriaConta {
 		segundaConta.deposita(200.00);
 		System.out.println("Saldo da segunda conta é de R$" + segundaConta.getSaldo() + "\n");
 		
-		primeiraConta.setAgencia(146);
-		segundaConta.setAgencia(primeiraConta.getAgencia());
+		/*primeiraConta.setAgencia(146);
+		segundaConta.setAgencia(primeiraConta.getAgencia());*/
 
 		if (primeiraConta == segundaConta)
 			System.out.println("Mesma conta!");
