@@ -1,4 +1,4 @@
-package Entidades;
+package entidades;
 
 public class Funcionario extends Pessoa{
 
@@ -7,10 +7,10 @@ public class Funcionario extends Pessoa{
 	public Funcionario() {}
 	
 	public double getBonificacao() {
-		return salario*0.1;
+		return this.salario*0.1;
 	}
 
 	public double getSalario() {
-		return salario;
+		return this.salario;
 	}
 }

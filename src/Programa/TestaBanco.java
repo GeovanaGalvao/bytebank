@@ -1,6 +1,6 @@
-package Programa;
+package programa;
 
-import Entidades.*;
+import entidades.*;
 
 public class TestaBanco {
 

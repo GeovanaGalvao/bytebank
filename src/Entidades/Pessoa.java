@@ -1,4 +1,4 @@
-package Entidades;
+package entidades;
 
 public abstract class Pessoa {
 	//Essa classe é abstrata, pois não quero ter uma instancia do objeto pessoa.

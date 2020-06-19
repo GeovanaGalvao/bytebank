@@ -1,6 +1,6 @@
-package Programa;
+package programa;
 
-import Entidades.Funcionario;
+import entidades.Funcionario;
 
 public class TesteFuncionario {
 
@@ -10,6 +10,6 @@ public class TesteFuncionario {
 		funcionario.setNome("Geovana");
 		funcionario.setCpf("123.456.789-10");
 		System.out.println("Funcionario\nNome: " + funcionario.getNome() + "\nCPF: " + funcionario.getCpf() + 
-				"\nSalario: R$" + funcionario.getSalario());
+				"\nSalario: R$" + funcionario.getSalario() + "\nBonificacao: R$" + funcionario.getBonificacao());
 	}
 }

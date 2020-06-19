@@ -1,6 +1,6 @@
-package Programa;
+package programa;
 
-import Entidades.Conta;
+import entidades.Conta;
 
 public class TestaValores {
 

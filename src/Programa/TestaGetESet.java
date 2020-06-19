@@ -1,7 +1,7 @@
-package Programa;
+package programa;
 
-import Entidades.Cliente;
-import Entidades.Conta;
+import entidades.Cliente;
+import entidades.Conta;
 
 public class TestaGetESet {
 
