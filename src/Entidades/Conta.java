@@ -18,26 +18,6 @@ public class Conta {
 		quantidadeDeContas++;
 	}
 	
-	public double getSaldo() {
-		return saldo;
-	}
-
-	public int getAgencia() {
-		return agencia;
-	}
-
-	public int getNumero() {
-		return numero;
-	}
-
-	public Cliente getTitular() {
-		return titular;
-	}
-
-	public void setTitular(Cliente titular) {
-		this.titular = titular;
-	}
-	
 	public static int getQuantidadeDeContas() {
 		return quantidadeDeContas;
 	}
@@ -70,5 +50,25 @@ public class Conta {
 			return false;
 		}
 		return true;
+	}
+	
+	public double getSaldo() {
+		return saldo;
+	}
+
+	public int getAgencia() {
+		return agencia;
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public Cliente getTitular() {
+		return titular;
+	}
+
+	public void setTitular(Cliente titular) {
+		this.titular = titular;
 	}
 }
