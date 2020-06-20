@@ -1,12 +1,12 @@
 package programa;
 
-import entidades.Conta;
+import entidades.*;
 
 public class TestaMetodo {
 
 	public static void main(String[] args) {
 		
-		Conta conta = new Conta();
+		Conta conta = new ContaCorrente();
 		conta.deposita(50.00);
 		System.out.println("Saldo atual: " + conta.getSaldo());
 		conta.saca(100.00);
@@ -18,7 +18,7 @@ public class TestaMetodo {
 		System.out.println("Saldo atual: " + conta.getSaldo());		
 		System.out.println("--------------------------------");
 		
-		Conta contaTeste = new Conta();
+		Conta contaTeste = new ContaCorrente();
 		contaTeste.deposita(1000);
 		
 		if(contaTeste.transfere(300,conta)) {

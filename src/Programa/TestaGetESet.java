@@ -1,16 +1,12 @@
 package programa;
 
-import entidades.Cliente;
-import entidades.Conta;
+import entidades.*;
 
 public class TestaGetESet {
 
 	public static void main(String[] args) {
 		
-		Conta conta = new Conta();
-		/*conta.setNumero(1337);
-		System.out.println("Numero da conta: " + conta.getNumero());*/
-		
+		Conta conta = new ContaCorrente();		
 		Cliente cliente = new Cliente();
 		cliente.setNome("Geovana");
 		conta.setTitular(cliente);

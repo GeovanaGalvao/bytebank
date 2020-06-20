@@ -11,7 +11,7 @@ public class TestaBanco {
 		clienteGeovana.setCpf("123.456.789-10");
 		clienteGeovana.setProfissao("Estudante");
 		
-		Conta contaGeovana = new Conta();
+		Conta contaGeovana = new ContaCorrente();
 		contaGeovana.setTitular(clienteGeovana);
 		contaGeovana.deposita(100.00);
 		System.out.println("Titular da conta: " + contaGeovana.getTitular().getNome());

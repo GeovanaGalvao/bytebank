@@ -7,13 +7,6 @@ public class TestePolimorfismo {
 
 	public static void main(String[] args) {
 		
-		Funcionario funcionario = new Funcionario();
-		funcionario.setNome("Marcela");
-		funcionario.setCpf("098.765.432-10");
-		ControleBonificacao.registra(funcionario);
-		System.out.println("Bonificação total: " + ControleBonificacao.getSomaBonificacoes() +
-				"\n-------------------------");
-		
 		Funcionario gerente = new Gerente("0123");
 		gerente.setNome("Geovana");
 		gerente.setCpf("123.456.789-10");

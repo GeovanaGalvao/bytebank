@@ -4,6 +4,6 @@ public class Designer extends Funcionario {
 
 	@Override
 	public double getBonificacao() {
-		return super.getBonificacao() + 150.00;
+		return super.getSalario()*0.1 + 150.00;
 	}
 }

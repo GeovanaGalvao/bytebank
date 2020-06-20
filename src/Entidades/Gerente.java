@@ -15,7 +15,7 @@ public class Gerente extends Funcionario{
 	
 	@Override
 	public double getBonificacao() {
-		return super.getBonificacao() + super.getSalario();//Soma o salário com a bonificação padrão do funcionário.
+		return super.getSalario();
 	}
 	
 	public boolean autentica(String senha) {
