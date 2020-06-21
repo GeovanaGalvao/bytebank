@@ -7,7 +7,7 @@ public class TestePolimorfismo {
 
 	public static void main(String[] args) {
 		
-		Funcionario gerente = new Gerente("0123");
+		Funcionario gerente = new Gerente();
 		gerente.setNome("Geovana");
 		gerente.setCpf("123.456.789-10");
 		ControleBonificacao.registra(gerente);		

@@ -1,6 +1,7 @@
 package programa;
 
 import entidades.*;
+import util.*;
 
 public class TesteReferencias {
 
@@ -25,6 +26,9 @@ public class TesteReferencias {
 			System.out.println("Contas diferentes!");
 		
 		System.out.println("Primeira conta: " + primeiraConta);
-		System.out.println("Segunda conta: " + segundaConta);
+		System.out.println("Segunda conta: " + segundaConta + "\n");
+		
+		Autenticavel cliente = new Cliente();
+		SistemaInterno.autentica(cliente);
 	}
 }
