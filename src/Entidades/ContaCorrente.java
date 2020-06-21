@@ -1,6 +1,8 @@
 package entidades;
 
-public class ContaCorrente extends Conta {
+import util.*;
+
+public class ContaCorrente extends Conta implements Tributavel{
 
 	public ContaCorrente() {
 		super();
@@ -13,5 +15,10 @@ public class ContaCorrente extends Conta {
 	@Override
 	public boolean saca(double valor) {
 		return super.saca(valor + 0.2); //Regra de ser cobrado 20 centavos por saque.
+	}
+
+	@Override
+	public double getValorImposto() {
+		return super.getSaldo()*0.01;
 	}
 }
